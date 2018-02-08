@@ -29,7 +29,7 @@
 - hosts: k8s-cluster:etcd:calico-rr
   any_errors_fatal: "{{ any_errors_fatal | default(true) }}"
   vars:
-    ansible_ssh_pipelining: true
+    ansible_ssh_pipelining: false
   gather_facts: true
 
 - hosts: k8s-cluster:etcd:calico-rr

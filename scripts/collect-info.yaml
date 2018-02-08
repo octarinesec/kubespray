@@ -7,7 +7,7 @@
     docker_bin_dir: /usr/bin
     bin_dir: /usr/local/bin
     system_namespace: kube-system
-    ansible_ssh_pipelining: true
+    ansible_ssh_pipelining: false
     etcd_cert_dir: /etc/ssl/etcd/ssl
     commands:
       - name: timedate_info
