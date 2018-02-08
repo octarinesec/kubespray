@@ -173,6 +173,12 @@ persistent_volumes_enabled: false
 # Base path for local volume provisioner addon
 local_volume_base_dir: /mnt/disks
 
+# Default path where volumes are mounted in the container
+local_volume_mount_dir: /local-disks
+
+# Storage class name for local volume provisioner addon
+local_volume_storage_class: local-storage
+
 ## When OpenStack is used, Cinder version can be explicitly specified if autodetection fails (Fixed in 1.9: https://github.com/kubernetes/kubernetes/issues/50461)
 # openstack_blockstorage_version: "v1/v2/auto (default)"
 ## When OpenStack is used, if LBaaSv2 is available you can enable it with the following 2 variables.
