@@ -147,7 +147,6 @@ helm_deployment_type: host
 
 # Enable kubeadm deployment (experimental)
 kubeadm_enabled: false
-kubeadm_token: "abcdef.0123456789abcdef"
 
 # Make a copy of kubeconfig on the host that runs Ansible in GITDIR/artifacts
 kubeconfig_localhost: false
@@ -169,6 +168,7 @@ registry_enabled: false
 enable_network_policy: false
 local_volume_provisioner_enabled: false
 persistent_volumes_enabled: false
+cephfs_provisioner_enabled: false
 
 # Base path for local volume provisioner addon
 local_volume_base_dir: /mnt/disks
